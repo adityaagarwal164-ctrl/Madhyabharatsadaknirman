@@ -1,0 +1,20 @@
+{
+  "name": "Madhya Bharat Sadak Nirman Pvt Ltd",
+  "short_name": "MBSN",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F5F4F0",
+  "theme_color": "#B8892A",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
