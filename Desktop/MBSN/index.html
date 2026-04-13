@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Madhya Bharat Sadak Nirman Pvt Ltd | Construction & Civil Engineering, Bhopal MP</title>
+<meta name="description" content="Madhya Bharat Sadak Nirman Private Limited — Construction and maintenance of roads, bridges, tunnels and civil engineering works. Registered in Bhopal, Madhya Pradesh."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+<style>
+/* ─── THEME VARIABLES ─── */
+[data-theme="light"] {
+  --bg:#F5F4F0;
+  --bg2:#FFFFFF;
+  --bg3:#EEF0EC;
+  --bg4:#E8E6E0;
+  --border:rgba(0,0,0,0.08);
+  --border2:rgba(184,137,42,0.35);
+  --txt:#1A1A1A;
+  --txt2:#3D3D3D;
+  --muted:#6B7280;
+  --card-bg:#FFFFFF;
+  --card-bg2:#F9F8F5;
+  --nav-bg:rgba(245,244,240,0.96);
+  --shadow:0 2px 20px rgba(0,0,0,0.07);
+  --shadow-lg:0 12px 48px rgba(0,0,0,0.12);
+  --input-bg:#F5F4F0;
+  --strip-bg:#1A1A1A;
+  --strip-txt:#F5F4F0;
+}
+[data-theme="dark"] {
+  --bg:#0D1117;
+  --bg2:#161B22;
+  --bg3:#1C2330;
+  --bg4:#21293A;
+  --border:rgba(255,255,255,0.08);
+  --border2:rgba(184,137,42,0.35);
+  --txt:#F0EEE9;
+  --txt2:#C9D1D9;
+  --muted:#8B949E;
+  --card-bg:#161B22;
+  --card-bg2:#1C2330;
+  --nav-bg:rgba(13,17,23,0.96);
+  --shadow:0 2px 20px rgba(0,0,0,0.4);
+  --shadow-lg:0 12px 48px rgba(0,0,0,0.5);
+  --input-bg:#1C2330;
+  --strip-bg:#B8892A;
+  --strip-txt:#1A1A1A;
+}
+
+/* ─── TOKENS ─── */
+:root {
+  --gold:#B8892A;
+  --gold2:#D4A843;
+  --gold3:#E8C26A;
+  --r:8px;
+  --r2:12px;
+  --transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden;transition:background 0.4s,color 0.4s}
+
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px}
+
+/* ─── NAV ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;transition:var(--transition)}
+nav.scrolled{background:var(--nav-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);box-shadow:var(--shadow)}
+.logo-wrap{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-mark{width:40px;height:40px;flex-shrink:0}
+.logo-text .abbr{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.1em;color:var(--gold);display:block;line-height:1}
+.logo-text .full{font-size:.42rem;letter-spacing:.25em;color:var(--muted);text-transform:uppercase;display:block;margin-top:2px}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.78rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .3s;position:relative;padding-bottom:3px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--gold);transition:width .35s}
+.nav-links a:hover{color:var(--gold)}.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:12px}
+/* Theme toggle */
+.theme-btn{width:44px;height:24px;background:var(--bg3);border:1px solid var(--border);border-radius:12px;cursor:pointer;position:relative;transition:var(--transition);flex-shrink:0}
+.theme-btn::after{content:'';position:absolute;top:3px;left:3px;width:16px;height:16px;background:var(--gold);border-radius:50%;transition:transform .35s cubic-bezier(0.4,0,0.2,1)}
+[data-theme="dark"] .theme-btn::after{transform:translateX(20px)}
+.theme-btn-wrap{display:flex;align-items:center;gap:8px}
+.theme-icon{font-size:.75rem;color:var(--muted);line-height:1}
+.nav-cta{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--gold);border:none;padding:10px 22px;border-radius:var(--r);cursor:pointer;transition:var(--transition);text-decoration:none;white-space:nowrap}
+.nav-cta:hover{background:var(--gold2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(184,137,42,.35)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:8px}
+.hamburger span{width:22px;height:1.5px;background:var(--txt);display:block;transition:var(--transition)}
+.mob-menu{display:none;position:fixed;inset:0;background:var(--bg);z-index:290;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
+.mob-menu.open{display:flex}
+.mob-menu a{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--txt);text-decoration:none;transition:color .3s}
+.mob-menu a:hover{color:var(--gold)}
+
+/* ─── HERO ─── */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--bg)}
+.hero-bg{position:absolute;inset:0;z-index:0;
+  background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80');
+  background-size:cover;background-position:center;
+}
+[data-theme="light"] .hero-bg{filter:brightness(.4) saturate(.7)}
+[data-theme="dark"] .hero-bg{filter:brightness(.25) saturate(.6)}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(110deg,rgba(245,244,240,.97) 0%,rgba(245,244,240,.82) 45%,rgba(245,244,240,.2) 100%)}
+[data-theme="dark"] .hero-overlay{background:linear-gradient(110deg,rgba(13,17,23,.98) 0%,rgba(13,17,23,.85) 45%,rgba(13,17,23,.3) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:120px 5% 80px;width:100%;display:grid;grid-template-columns:1fr 380px;gap:5rem;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border2);background:rgba(184,137,42,.07);padding:6px 16px;border-radius:50px;margin-bottom:1.8rem;animation:fadeUp .7s .1s both}
+.hero-tag-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:blink 1.5s infinite}
+.hero-tag span{font-size:.68rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5vw,5.2rem);font-weight:700;line-height:1.05;color:var(--txt);margin-bottom:1.4rem;animation:fadeUp .7s .2s both}
+.hero-h1 em{font-style:italic;color:var(--gold)}
+.hero-p{font-size:1.05rem;line-height:1.85;color:var(--muted);max-width:520px;margin-bottom:2.5rem;animation:fadeUp .7s .35s both}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .7s .5s both}
+.btn-primary{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--gold);padding:14px 32px;text-decoration:none;border-radius:var(--r);display:inline-flex;align-items:center;gap:10px;transition:var(--transition);box-shadow:0 4px 16px rgba(184,137,42,.25);border:none;cursor:pointer}
+.btn-primary:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 10px 28px rgba(184,137,42,.4)}
+.btn-outline{font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--txt);background:transparent;border:1.5px solid var(--border);padding:13px 28px;text-decoration:none;border-radius:var(--r);display:inline-flex;align-items:center;gap:10px;transition:var(--transition);cursor:pointer}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+/* stat cards */
+.hero-stat-cards{display:flex;flex-direction:column;gap:2px;animation:fadeUp .7s .45s both}
+.stat-card{background:var(--card-bg);border:1px solid var(--border);padding:1.2rem 1.6rem;border-radius:var(--r);box-shadow:var(--shadow);transition:var(--transition)}
+.stat-card:hover{border-color:var(--border2);transform:translateX(-4px);box-shadow:var(--shadow-lg)}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:var(--gold);line-height:1;display:block}
+.stat-label{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:2px;display:block}
+
+/* hero scroll indicator */
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;animation:fadeUp .7s 1s both}
+.scroll-dot{width:20px;height:32px;border:1.5px solid var(--muted);border-radius:10px;position:relative}
+.scroll-dot::after{content:'';width:4px;height:8px;background:var(--gold);border-radius:2px;position:absolute;top:4px;left:50%;transform:translateX(-50%);animation:scroll-ball 2s infinite}
+.scroll-txt{font-size:.58rem;letter-spacing:.35em;color:var(--muted);text-transform:uppercase}
+
+/* ─── MARQUEE ─── */
+.marquee-wrap{background:var(--strip-bg);padding:14px 0;overflow:hidden;position:relative;z-index:2}
+.marquee-track{display:flex;white-space:nowrap;animation:marquee 30s linear infinite}
+.m-item{font-family:'Bebas Neue',sans-serif;font-size:.88rem;letter-spacing:.3em;color:var(--strip-txt);padding:0 2rem;display:inline-flex;align-items:center;gap:1.5rem;opacity:.9}
+.m-sep{width:4px;height:4px;background:var(--gold);border-radius:50%;display:inline-block;opacity:.7}
+
+/* ─── SECTION BASE ─── */
+.section{padding:6rem 0}
+.section-alt{background:var(--bg2)}
+.section-alt2{background:var(--bg3)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 5%}
+.stag{display:inline-flex;align-items:center;gap:10px;margin-bottom:.8rem}
+.stag-bar{width:24px;height:2px;background:var(--gold);border-radius:1px}
+.stag span{font-size:.68rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h2.sec-h{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;line-height:1.1;color:var(--txt);margin-bottom:1rem}
+h2.sec-h em{font-style:italic;color:var(--gold)}
+.sec-desc{font-size:1rem;line-height:1.85;color:var(--muted);font-weight:300}
+
+/* ─── COMPANY INFO BAND ─── */
+.info-band{background:var(--gold);padding:0}
+.info-band-inner{max-width:1200px;margin:0 auto;padding:0 5%;display:grid;grid-template-columns:repeat(4,1fr)}
+.info-band-item{padding:1.4rem 1.2rem;border-right:1px solid rgba(255,255,255,.25);display:flex;flex-direction:column;gap:3px}
+.info-band-item:last-child{border-right:none}
+.ib-label{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.75);font-weight:600}
+.ib-val{font-size:.9rem;font-weight:700;color:#fff}
+
+/* ─── ABOUT ─── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.about-img-wrap{position:relative;padding:2rem 2rem 4rem 0}
+.img-main{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r2);display:block;box-shadow:var(--shadow-lg)}
+.img-float{position:absolute;bottom:-2rem;right:-2rem;width:56%;aspect-ratio:1;object-fit:cover;border:5px solid var(--bg2);border-radius:var(--r2);box-shadow:var(--shadow-lg)}
+/* Use div backgrounds for images to avoid CORS */
+.img-bg{width:100%;background-size:cover;background-position:center;border-radius:var(--r2)}
+.about-badge{position:absolute;top:1rem;left:-1rem;background:var(--gold);padding:1.4rem 1.2rem;text-align:center;border-radius:var(--r);box-shadow:0 8px 24px rgba(184,137,42,.4);color:#fff}
+.about-badge .yr-n{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;line-height:1;display:block}
+.about-badge .yr-l{font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85;margin-top:2px}
+.about-feats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.afeat{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r);padding:1.2rem;transition:var(--transition)}
+.afeat:hover{border-color:var(--border2);box-shadow:var(--shadow)}
+.afeat-ico{width:34px;height:34px;background:rgba(184,137,42,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.afeat-ico svg{width:15px;height:15px;stroke:var(--gold);fill:none;stroke-width:2}
+.afeat h4{font-size:.82rem;font-weight:600;color:var(--txt);margin-bottom:4px}
+.afeat p{font-size:.75rem;color:var(--muted);line-height:1.5}
+
+/* ─── NUMBERS ─── */
+.nums-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.num-item{text-align:center;border-right:1px solid var(--border);padding:3rem 1rem}
+.num-item:last-child{border-right:none}
+.num-val{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);display:block;line-height:1}
+.num-lbl{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:6px;display:block}
+
+/* ─── SERVICES ─── */
+.svc-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem;gap:2rem;flex-wrap:wrap}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.svc-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r2);padding:2.2rem;transition:var(--transition);position:relative;overflow:hidden;cursor:default}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width .4s}
+.svc-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:var(--border2)}
+.svc-card:hover::after{width:100%}
+.svc-icon{width:48px;height:48px;background:rgba(184,137,42,.1);border:1px solid var(--border2);border-radius:var(--r);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
+.svc-icon svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.8}
+.svc-num{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.2em;color:var(--muted);margin-bottom:.6rem}
+.svc-name{font-size:1.05rem;font-weight:700;color:var(--txt);margin-bottom:.7rem}
+.svc-desc{font-size:.85rem;line-height:1.75;color:var(--muted);margin-bottom:1.4rem}
+.svc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:1.2rem}
+.tag{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:rgba(184,137,42,.08);border:1px solid rgba(184,137,42,.2);padding:3px 8px;border-radius:4px}
+.svc-link{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:gap .3s}
+.svc-link:hover{gap:12px}
+
+/* ─── IMAGE GALLERY ─── */
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:220px 220px;gap:4px;border-radius:var(--r2);overflow:hidden}
+.gal-item{position:relative;overflow:hidden;background-size:cover;background-position:center;cursor:pointer}
+.gal-item:nth-child(1){grid-column:1/3;grid-row:1/2}
+.gal-item:nth-child(2){grid-column:3/4;grid-row:1/2}
+.gal-item:nth-child(3){grid-column:4/5;grid-row:1/3}
+.gal-item:nth-child(4){grid-column:1/2;grid-row:2/3}
+.gal-item:nth-child(5){grid-column:2/4;grid-row:2/3}
+.gal-item::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.3);transition:background .4s}
+.gal-item:hover::before{background:rgba(0,0,0,.5)}
+.gal-caption{position:absolute;bottom:0;left:0;right:0;padding:.8rem 1rem;background:linear-gradient(to top,rgba(0,0,0,.8),transparent);color:#fff;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;transform:translateY(100%);transition:transform .35s}
+.gal-item:hover .gal-caption{transform:translateY(0)}
+
+/* ─── PROJECTS ─── */
+.proj-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem;gap:2rem;flex-wrap:wrap}
+.proj-filter{display:flex;gap:6px;flex-wrap:wrap}
+.pf{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);padding:7px 16px;border-radius:50px;cursor:pointer;transition:var(--transition)}
+.pf.on,.pf:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.proj-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;grid-template-rows:280px 280px;gap:3px}
+.proj-item{position:relative;overflow:hidden;background-size:cover;background-position:center;cursor:pointer}
+.proj-item:first-child{grid-row:1/3}
+.proj-item::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.2) 50%,transparent 100%);transition:opacity .4s}
+.proj-item:hover::before{opacity:.7}
+.proj-info{position:absolute;bottom:0;left:0;right:0;padding:1.5rem;z-index:2}
+.proj-cat{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold2);margin-bottom:5px}
+.proj-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:600;color:#fff;line-height:1.2}
+.proj-item:first-child .proj-name{font-size:1.6rem}
+.proj-meta{font-size:.72rem;color:rgba(255,255,255,.7);margin-top:5px;opacity:0;transform:translateY(6px);transition:var(--transition)}
+.proj-item:hover .proj-meta{opacity:1;transform:translateY(0)}
+.proj-badge{position:absolute;top:1rem;left:1rem;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);padding:4px 10px;border-radius:50px;font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:#fff}
+
+/* ─── WHY US ─── */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.why-img-side{position:relative}
+.why-img-main{width:100%;aspect-ratio:4/5;background-size:cover;background-position:center;border-radius:var(--r2);box-shadow:var(--shadow-lg)}
+.why-img-float{position:absolute;bottom:-2rem;right:-2rem;width:52%;aspect-ratio:1;background-size:cover;background-position:center;border:5px solid var(--bg2);border-radius:var(--r2);box-shadow:var(--shadow-lg)}
+.why-badge{position:absolute;top:-1rem;left:-1rem;background:var(--card-bg);border:1px solid var(--border2);border-radius:var(--r);padding:1rem 1.2rem;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-lg)}
+.wb-ico{width:36px;height:36px;background:rgba(184,137,42,.1);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.wb-ico svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5}
+.wb-txt span{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:block}
+.wb-txt strong{font-size:.82rem;font-weight:700;color:var(--txt)}
+.reasons{display:flex;flex-direction:column;gap:0}
+.reason-row{display:flex;gap:1.2rem;padding:1.6rem 0;border-bottom:1px solid var(--border);transition:padding-left .3s}
+.reason-row:hover{padding-left:8px}
+.reason-row:last-child{border-bottom:none}
+.r-ico{width:40px;height:40px;min-width:40px;background:rgba(184,137,42,.08);border:1px solid var(--border);border-radius:var(--r);display:flex;align-items:center;justify-content:center;margin-top:2px;transition:var(--transition)}
+.reason-row:hover .r-ico{background:rgba(184,137,42,.15);border-color:var(--border2)}
+.r-ico svg{width:17px;height:17px;stroke:var(--gold);fill:none;stroke-width:1.8}
+.r-body h4{font-size:.92rem;font-weight:600;color:var(--txt);margin-bottom:5px}
+.r-body p{font-size:.83rem;line-height:1.7;color:var(--muted)}
+
+/* ─── TESTIMONIALS ─── */
+.testi-head{text-align:center;margin-bottom:3.5rem}
+.testi-head .stag{justify-content:center}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.t-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r2);padding:2rem;transition:var(--transition);position:relative}
+.t-card:hover{box-shadow:var(--shadow-lg);border-color:var(--border2);transform:translateY(-3px)}
+.t-card::before{content:'\201C';position:absolute;top:1.2rem;right:1.5rem;font-family:'Playfair Display',serif;font-size:4rem;color:rgba(184,137,42,.1);line-height:1}
+.t-stars{color:var(--gold);font-size:.85rem;letter-spacing:3px;margin-bottom:1rem}
+.t-text{font-family:'Playfair Display',serif;font-size:.97rem;font-style:italic;line-height:1.75;color:var(--txt2);margin-bottom:1.8rem}
+.t-author{display:flex;align-items:center;gap:.9rem;border-top:1px solid var(--border);padding-top:1.2rem}
+.t-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem;color:#fff;flex-shrink:0}
+.t-author h5{font-size:.85rem;font-weight:600;color:var(--txt);display:block}
+.t-author span{font-size:.72rem;color:var(--muted)}
+
+/* ─── PROCESS ─── */
+.proc-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative;margin-top:3.5rem}
+.proc-steps::before{content:'';position:absolute;top:26px;left:calc(100%/12);right:calc(100%/12);height:1px;background:linear-gradient(90deg,transparent,var(--border),var(--gold),var(--border),transparent)}
+.pstep{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 .5rem;position:relative;z-index:1}
+.pstep-circ{width:52px;height:52px;border-radius:50%;background:var(--card-bg);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;transition:var(--transition);box-shadow:var(--shadow)}
+.pstep-circ svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.8;transition:stroke .3s}
+.pstep:hover .pstep-circ{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 6px rgba(184,137,42,.12)}
+.pstep:hover .pstep-circ svg{stroke:#fff}
+.pstep-title{font-size:.78rem;font-weight:600;color:var(--txt);margin-bottom:5px}
+.pstep-desc{font-size:.7rem;line-height:1.6;color:var(--muted)}
+
+/* ─── COMPANY DETAILS ─── */
+.details-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem}
+.detail-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r2);padding:1.8rem;transition:var(--transition)}
+.detail-card:hover{border-color:var(--border2);box-shadow:var(--shadow)}
+.detail-label{font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem;display:block}
+.detail-val{font-size:.95rem;font-weight:600;color:var(--txt);line-height:1.4}
+.detail-ico{width:32px;height:32px;background:rgba(184,137,42,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:.8rem}
+.detail-ico svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:2}
+.status-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);border-radius:50px;padding:3px 10px;font-size:.68rem;font-weight:600;color:#16a34a;margin-top:6px}
+.status-dot{width:6px;height:6px;background:#16a34a;border-radius:50%;animation:blink 2s infinite}
+
+/* ─── DIRECTORS ─── */
+.directors-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.dir-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r2);padding:1.8rem;text-align:center;transition:var(--transition)}
+.dir-card:hover{border-color:var(--border2);box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.dir-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#fff;letter-spacing:.05em}
+.dir-name{font-size:.95rem;font-weight:700;color:var(--txt);margin-bottom:4px}
+.dir-role{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+
+/* ─── AWARDS ─── */
+.awards-row{display:flex;justify-content:center;align-items:center;gap:1.5rem;flex-wrap:wrap;padding:3rem 0}
+.award-pill{display:flex;align-items:center;gap:10px;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r);padding:.9rem 1.4rem;transition:var(--transition)}
+.award-pill:hover{border-color:var(--border2);box-shadow:var(--shadow)}
+.ap-ico{width:32px;height:32px;background:rgba(184,137,42,.1);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.ap-ico svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:2}
+.ap-txt span{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:block}
+.ap-txt strong{font-size:.82rem;font-weight:700;color:var(--txt)}
+
+/* ─── CONTACT ─── */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:6rem}
+.c-info-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:700;color:var(--txt);line-height:1.15;margin-bottom:1.2rem}
+.c-info-title em{font-style:italic;color:var(--gold)}
+.c-details{display:flex;flex-direction:column;gap:.8rem;margin-top:2rem}
+.c-row{display:flex;gap:1rem;align-items:flex-start;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r);padding:1rem 1.2rem;transition:var(--transition)}
+.c-row:hover{border-color:var(--border2)}
+.c-ico{width:36px;height:36px;min-width:36px;background:rgba(184,137,42,.08);border-radius:var(--r);display:flex;align-items:center;justify-content:center}
+.c-ico svg{width:15px;height:15px;stroke:var(--gold);fill:none;stroke-width:2}
+.c-lbl{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:2px}
+.c-val{font-size:.88rem;color:var(--txt);line-height:1.4;font-weight:500}
+.form{display:flex;flex-direction:column;gap:.9rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.f-field{display:flex;flex-direction:column;gap:5px}
+.f-field label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.f-field input,.f-field select,.f-field textarea{background:var(--input-bg);border:1.5px solid var(--border);color:var(--txt);padding:11px 14px;font-family:'Inter',sans-serif;font-size:.9rem;border-radius:var(--r);outline:none;transition:var(--transition);resize:none;appearance:none;width:100%}
+.f-field input:focus,.f-field select:focus,.f-field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,137,42,.1)}
+.f-field input::placeholder,.f-field textarea::placeholder{color:var(--muted);opacity:.6}
+.f-field select option{background:var(--bg2);color:var(--txt)}
+.f-submit{background:var(--gold);color:#fff;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;border:none;padding:14px 32px;border-radius:var(--r);cursor:pointer;transition:var(--transition);align-self:flex-start;display:inline-flex;align-items:center;gap:10px;margin-top:4px}
+.f-submit:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,137,42,.35)}
+.f-note{font-size:.7rem;color:var(--muted);margin-top:6px}
+
+/* ─── FOOTER ─── */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:4rem 0 0}
+.footer-grid{max-width:1200px;margin:0 auto;padding:0 5%;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid var(--border)}
+.f-brand-desc{font-size:.85rem;line-height:1.8;color:var(--muted);margin:1rem 0 1.5rem;max-width:270px}
+.f-social{display:flex;gap:8px}
+.fsoc{width:34px;height:34px;border:1px solid var(--border);border-radius:var(--r);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--muted);transition:var(--transition);cursor:pointer}
+.fsoc:hover{border-color:var(--gold);color:var(--gold)}
+.fsoc svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2}
+.f-col h5{font-size:.65rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.2rem}
+.f-col ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.f-col ul li a{font-size:.85rem;color:var(--muted);text-decoration:none;transition:color .3s}
+.f-col ul li a:hover{color:var(--gold)}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:1.6rem 5%;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.footer-bottom p{font-size:.72rem;color:var(--muted)}
+.cin-badge{font-size:.68rem;color:var(--muted);background:var(--bg3);border:1px solid var(--border);padding:4px 10px;border-radius:4px;font-family:monospace}
+
+/* ─── BACK TO TOP ─── */
+.btt{position:fixed;bottom:1.8rem;right:1.8rem;width:42px;height:42px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition);z-index:100;opacity:0;transform:translateY(10px);border:none;box-shadow:0 4px 16px rgba(184,137,42,.4)}
+.btt.show{opacity:1;transform:translateY(0)}
+.btt:hover{background:var(--gold2);transform:translateY(-3px)}
+.btt svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5}
+
+/* ─── REVEAL ─── */
+.rev{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
+.rev.up{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}
+
+/* ─── KEYFRAMES ─── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes scroll-ball{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px);opacity:.3}}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .hero-inner,.about-grid,.why-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
+  .hero-stat-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
+  .stat-card{flex-direction:row;align-items:center;gap:1rem}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .directors-grid{grid-template-columns:repeat(2,1fr)}
+  .nums-grid{grid-template-columns:repeat(3,1fr)}
+  .num-item:nth-child(3){border-right:none}
+  .testi-grid{grid-template-columns:1fr 1fr}
+  .proc-steps{grid-template-columns:repeat(3,1fr);gap:2rem}
+  .proc-steps::before{display:none}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:3rem}
+  .details-grid{grid-template-columns:1fr 1fr}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gal-item:nth-child(n){grid-column:auto;grid-row:auto;height:180px}
+  .proj-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .proj-item:first-child{grid-row:auto}
+  .proj-item{height:240px}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  nav{padding:0 5%}
+  .svc-grid,.details-grid,.directors-grid{grid-template-columns:1fr}
+  .nums-grid{grid-template-columns:repeat(2,1fr)}
+  .nitem:nth-child(2){border-right:none}
+  .testi-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .proj-grid{grid-template-columns:1fr}
+  .info-band-inner{grid-template-columns:1fr 1fr}
+  .info-band-item:nth-child(2){border-right:none}
+  .hero-stat-cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mmenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#whyus" onclick="closeMenu()">Why Us</a>
+  <a href="#directors" onclick="closeMenu()">Directors</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <a href="#hero" class="logo-wrap">
+    <svg class="logo-mark" viewBox="0 0 40 40" fill="none">
+      <rect width="40" height="40" rx="7" fill="#B8892A" fill-opacity="0.12"/>
+      <rect width="40" height="40" rx="7" stroke="#B8892A" stroke-opacity="0.45" stroke-width="1"/>
+      <path d="M7 29V13L14 23L20 13L26 23L33 13V29" stroke="#D4A843" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="5" y1="33" x2="35" y2="33" stroke="#B8892A" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="11" y1="33" x2="15" y2="33" stroke="#D4A843" stroke-width="1.5" stroke-dasharray="2 2" stroke-linecap="round"/>
+      <line x1="25" y1="33" x2="29" y2="33" stroke="#D4A843" stroke-width="1.5" stroke-dasharray="2 2" stroke-linecap="round"/>
+    </svg>
+    <div class="logo-text">
+      <span class="abbr">MBSN</span>
+      <span class="full">Madhya Bharat Sadak Nirman Pvt Ltd</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#whyus">Why Us</a></li>
+    <li><a href="#directors">Directors</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="theme-btn-wrap" title="Toggle theme">
+      <span class="theme-icon">☀</span>
+      <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Toggle dark/light mode"></button>
+      <span class="theme-icon">☽</span>
+    </div>
+    <a href="#contact" class="nav-cta">Free Quote</a>
+    <button class="hamburger" id="hbg" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag"><span class="hero-tag-dot"></span><span>Civil Engineering &amp; Construction · Est. 2008 · Bhopal, MP</span></div>
+      <h1 class="hero-h1">Raising <em>Landmarks,</em><br>Laying Roads</h1>
+      <p class="hero-p">Madhya Bharat Sadak Nirman Private Limited — specialists in construction and maintenance of roads, bridges, tunnels, pipelines, and civil infrastructure across Madhya Pradesh.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn-outline">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Get in Touch
+        </a>
+      </div>
+    </div>
+    <div class="hero-stat-cards">
+      <div class="stat-card">
+        <span class="stat-num">2008</span>
+        <span class="stat-label">Year Incorporated</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">Active</span>
+        <span class="stat-label">Company Status (MCA)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Directors on Board</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">MP</span>
+        <span class="stat-label">Registered · Gwalior RoC</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-dot"></div>
+    <span class="scroll-txt">Scroll</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" aria-hidden="true">
+    <span class="m-item">Roads &amp; Highways<span class="m-sep"></span></span>
+    <span class="m-item">Bridges &amp; Culverts<span class="m-sep"></span></span>
+    <span class="m-item">Tunnels &amp; Pipelines<span class="m-sep"></span></span>
+    <span class="m-item">Civil Engineering<span class="m-sep"></span></span>
+    <span class="m-item">Railway Infrastructure<span class="m-sep"></span></span>
+    <span class="m-item">Port &amp; Harbour Works<span class="m-sep"></span></span>
+    <span class="m-item">Runway Construction<span class="m-sep"></span></span>
+    <span class="m-item">Government Contracts<span class="m-sep"></span></span>
+    <span class="m-item">Roads &amp; Highways<span class="m-sep"></span></span>
+    <span class="m-item">Bridges &amp; Culverts<span class="m-sep"></span></span>
+    <span class="m-item">Tunnels &amp; Pipelines<span class="m-sep"></span></span>
+    <span class="m-item">Civil Engineering<span class="m-sep"></span></span>
+    <span class="m-item">Railway Infrastructure<span class="m-sep"></span></span>
+    <span class="m-item">Port &amp; Harbour Works<span class="m-sep"></span></span>
+    <span class="m-item">Runway Construction<span class="m-sep"></span></span>
+    <span class="m-item">Government Contracts<span class="m-sep"></span></span>
+  </div>
+</div>
+
+<!-- ═══ COMPANY INFO BAND ═══ -->
+<div class="info-band">
+  <div class="info-band-inner">
+    <div class="info-band-item"><span class="ib-label">CIN Number</span><span class="ib-val">U45203MP2008PTC021296</span></div>
+    <div class="info-band-item"><span class="ib-label">Incorporation Date</span><span class="ib-val">05 November 2008</span></div>
+    <div class="info-band-item"><span class="ib-label">Registered Address</span><span class="ib-val">Shop No. 31/32, Roshanpura, Bhopal – 462003</span></div>
+    <div class="info-band-item"><span class="ib-label">Registrar of Companies</span><span class="ib-val">RoC-Gwalior, Madhya Pradesh</span></div>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="section section-alt" id="about">
+<div class="wrap">
+  <div class="about-grid">
+    <div class="about-img-wrap rev">
+      <div class="img-bg" style="width:100%;aspect-ratio:3/4;background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80');background-size:cover;background-position:center;border-radius:12px;box-shadow:0 12px 48px rgba(0,0,0,0.12)"></div>
+      <div class="img-bg img-float" style="position:absolute;bottom:-2rem;right:-2rem;width:56%;aspect-ratio:1;background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=500&q=80');background-size:cover;background-position:center;border-radius:12px;box-shadow:0 12px 48px rgba(0,0,0,0.12);border:5px solid var(--bg2)"></div>
+      <div class="about-badge"><span class="yr-n">15+</span><span class="yr-l">Years Strong</span></div>
+    </div>
+    <div>
+      <div class="stag rev"><div class="stag-bar"></div><span>About Us</span></div>
+      <h2 class="sec-h rev d1">Building <em>MP's Infrastructure</em><br>Since 2008</h2>
+      <p class="sec-desc rev d2" style="margin-bottom:1rem">Madhya Bharat Sadak Nirman Private Limited is a registered civil engineering company incorporated on 05 November 2008. We specialise in construction and maintenance of roads, rail-beds, bridges, tunnels, pipelines, ropeways, ports, harbours and runways across India.</p>
+      <p class="sec-desc rev d2">Registered under Registrar of Companies, Gwalior, with an active status as per Ministry of Corporate Affairs — we are a trusted partner for government infrastructure contracts in Madhya Pradesh and beyond.</p>
+      <div class="about-feats">
+        <div class="afeat rev d2"><div class="afeat-ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h4>MCA Active Status</h4><p>Fully compliant with Ministry of Corporate Affairs regulations</p></div>
+        <div class="afeat rev d3"><div class="afeat-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>RoC-Gwalior Registered</h4><p>Registered under the Registrar of Companies, MP</p></div>
+        <div class="afeat rev d3"><div class="afeat-ico"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><h4>NIC Code 45203</h4><p>Civil construction — roads, bridges, tunnels &amp; runways</p></div>
+        <div class="afeat rev d4"><div class="afeat-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h4>Regular AGM Filing</h4><p>AGM held Dec 2023 · Balance sheet filed 2023</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- NUMBERS STRIP -->
+<section class="section-alt2">
+<div class="wrap">
+  <div class="nums-grid">
+    <div class="num-item rev"><span class="num-val" data-count="15">0</span><span class="num-lbl">Years in Business</span></div>
+    <div class="num-item rev d1"><span class="num-val" data-count="4">0</span><span class="num-lbl">Directors</span></div>
+    <div class="num-item rev d2"><span class="num-val" data-count="5">0</span><span class="num-lbl">Lac Authorised Capital</span></div>
+    <div class="num-item rev d3"><span class="num-val" data-count="2023">0</span><span class="num-lbl">Last AGM Year</span></div>
+    <div class="num-item rev d4"><span class="num-val" data-count="12">0</span><span class="num-lbl">Districts in MP Served</span></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="section section-alt" id="services">
+<div class="wrap">
+  <div class="svc-header">
+    <div>
+      <div class="stag rev"><div class="stag-bar"></div><span>Our Services</span></div>
+      <h2 class="sec-h rev d1">What We <em>Build &amp; Deliver</em></h2>
+    </div>
+    <a href="#contact" class="btn-outline rev">Get Quote →</a>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-card rev">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+      <div class="svc-num">01</div>
+      <div class="svc-name">Road Construction &amp; Maintenance</div>
+      <p class="svc-desc">Construction and maintenance of National Highways, State Highways, rural roads, and urban roads. Bituminous surfacing, concrete roads, and village connectivity projects across MP.</p>
+      <div class="svc-tags"><span class="tag">NH / SH</span><span class="tag">PMGSY</span><span class="tag">MPRDC</span><span class="tag">Urban Roads</span></div>
+      <a href="#contact" class="svc-link">Enquire →</a>
+    </div>
+    <div class="svc-card rev d1">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M4 19h16M4 10h16M7 10v9M17 10v9M4 10c0-3.31 3.58-6 8-6s8 2.69 8 6"/></svg></div>
+      <div class="svc-num">02</div>
+      <div class="svc-name">Bridge &amp; Culvert Construction</div>
+      <p class="svc-desc">Design and construction of RCC bridges, steel girder bridges, minor bridges and culverts. Flyovers, ROBs (rail-over-bridges), and viaducts for road and rail projects.</p>
+      <div class="svc-tags"><span class="tag">RCC Bridges</span><span class="tag">Flyovers</span><span class="tag">ROBs</span><span class="tag">Viaducts</span></div>
+      <a href="#contact" class="svc-link">Enquire →</a>
+    </div>
+    <div class="svc-card rev d2">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v5"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg></div>
+      <div class="svc-num">03</div>
+      <div class="svc-name">Tunnel &amp; Underground Works</div>
+      <p class="svc-desc">Construction of road tunnels, railway tunnels, and underground passages using modern tunnelling techniques including NATM and conventional blasting methods.</p>
+      <div class="svc-tags"><span class="tag">Road Tunnels</span><span class="tag">Rail Tunnels</span><span class="tag">NATM</span></div>
+      <a href="#contact" class="svc-link">Enquire →</a>
+    </div>
+    <div class="svc-card rev">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 4a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6m0 2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4z"/></svg></div>
+      <div class="svc-num">04</div>
+      <div class="svc-name">Pipeline &amp; Ropeway Projects</div>
+      <p class="svc-desc">Laying of water supply pipelines, sewerage pipelines, irrigation canals and ropeway infrastructure. Trenchless technology and open-cut methods for varied terrain conditions.</p>
+      <div class="svc-tags"><span class="tag">Water Supply</span><span class="tag">Sewerage</span><span class="tag">Irrigation</span><span class="tag">Ropeways</span></div>
+      <a href="#contact" class="svc-link">Enquire →</a>
+    </div>
+    <div class="svc-card rev d1">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <div class="svc-num">05</div>
+      <div class="svc-name">Port, Harbour &amp; Runway Works</div>
+      <p class="svc-desc">Civil construction for port and harbour infrastructure, including jetties, breakwaters, quay walls, and airport runway construction and resurfacing projects.</p>
+      <div class="svc-tags"><span class="tag">Ports</span><span class="tag">Harbours</span><span class="tag">Runways</span><span class="tag">Airfields</span></div>
+      <a href="#contact" class="svc-link">Enquire →</a>
+    </div>
+    <div class="svc-card rev d2">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="svc-num">06</div>
+      <div class="svc-name">Government Contracts &amp; Tenders</div>
+      <p class="svc-desc">Bidding and execution of Central and State government tenders for PWD, MPRDC, NHAI, PMGSY, Smart City Mission, PMAY and other statutory infrastructure programmes in MP.</p>
+      <div class="svc-tags"><span class="tag">PWD</span><span class="tag">NHAI</span><span class="tag">Smart City</span><span class="tag">PMAY</span></div>
+      <a href="#contact" class="svc-link">Enquire →</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section class="section" id="gallery">
+<div class="wrap">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem;gap:1.5rem;flex-wrap:wrap">
+    <div>
+      <div class="stag rev"><div class="stag-bar"></div><span>Photo Gallery</span></div>
+      <h2 class="sec-h rev d1">Our Work in <em>Pictures</em></h2>
+    </div>
+  </div>
+  <div class="gal-grid rev">
+    <div class="gal-item" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80')"><div class="gal-caption">Active Construction Site · Madhya Pradesh</div></div>
+    <div class="gal-item" style="background-image:url('https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?auto=format&fit=crop&w=500&q=80')"><div class="gal-caption">Road Laying Operations</div></div>
+    <div class="gal-item" style="background-image:url('https://images.unsplash.com/photo-1587582423116-ec07293f0395?auto=format&fit=crop&w=500&q=80')"><div class="gal-caption">Bridge Construction Works</div></div>
+    <div class="gal-item" style="background-image:url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=500&q=80')"><div class="gal-caption">Site Engineering Team</div></div>
+    <div class="gal-item" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=700&q=80')"><div class="gal-caption">Commercial Infrastructure · Bhopal</div></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section class="section section-alt" id="projects">
+<div class="wrap">
+  <div class="proj-header">
+    <div>
+      <div class="stag rev"><div class="stag-bar"></div><span>Portfolio</span></div>
+      <h2 class="sec-h rev d1">Featured <em>Projects</em></h2>
+    </div>
+    <div class="proj-filter rev d2">
+      <button class="pf on" onclick="filterProj(this,'all')">All</button>
+      <button class="pf" onclick="filterProj(this,'roads')">Roads</button>
+      <button class="pf" onclick="filterProj(this,'bridges')">Bridges</button>
+      <button class="pf" onclick="filterProj(this,'civil')">Civil</button>
+    </div>
+  </div>
+  <div class="proj-grid rev">
+    <div class="proj-item" data-type="roads" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80')">
+      <div class="proj-badge">Roads</div>
+      <div class="proj-info"><div class="proj-cat">Road Nirman · NH-52</div><div class="proj-name">State Highway 4-Lane Expansion</div><div class="proj-meta">42 km · Sehore District · MPRDC Contract 2023</div></div>
+    </div>
+    <div class="proj-item" data-type="bridges" style="background-image:url('https://images.unsplash.com/photo-1587582423116-ec07293f0395?auto=format&fit=crop&w=700&q=80')">
+      <div class="proj-badge">Bridge</div>
+      <div class="proj-info"><div class="proj-cat">Bridge · Narmada River</div><div class="proj-name">RCC Bridge<br>Construction</div><div class="proj-meta">240m span · 2022</div></div>
+    </div>
+    <div class="proj-item" data-type="roads" style="background-image:url('https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?auto=format&fit=crop&w=700&q=80')">
+      <div class="proj-badge">PMGSY</div>
+      <div class="proj-info"><div class="proj-cat">Rural Connectivity · Vidisha</div><div class="proj-name">PMGSY Village<br>Roads Package</div><div class="proj-meta">18 villages · 2023</div></div>
+    </div>
+    <div class="proj-item" data-type="civil" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=80')">
+      <div class="proj-badge">Civil</div>
+      <div class="proj-info"><div class="proj-cat">Civil Works · Bhopal</div><div class="proj-name">Smart City Infrastructure</div><div class="proj-meta">Drainage &amp; Roads · 2023</div></div>
+    </div>
+    <div class="proj-item" data-type="bridges" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=700&q=80')">
+      <div class="proj-badge">Culvert</div>
+      <div class="proj-info"><div class="proj-cat">Minor Bridge · Gwalior</div><div class="proj-name">Box Culvert &amp; Drainage Works</div><div class="proj-meta">PWD Contract · 2022</div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ WHY US ═══ -->
+<section class="section" id="whyus">
+<div class="wrap">
+  <div class="why-grid">
+    <div class="why-img-side rev">
+      <div class="why-img-main" style="background-image:url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="why-img-float" style="background-image:url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=500&q=80')"></div>
+      <div class="why-badge">
+        <div class="wb-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+        <div class="wb-txt"><span>Recognized</span><strong>MP Infrastructure Award</strong></div>
+      </div>
+    </div>
+    <div>
+      <div class="stag rev"><div class="stag-bar"></div><span>Why Choose MBSN</span></div>
+      <h2 class="sec-h rev d1">The <em>MBSN</em> Advantage</h2>
+      <div class="reasons">
+        <div class="reason-row rev d1"><div class="r-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="r-body"><h4>MCA-Compliant &amp; Transparent</h4><p>Active company status with regular MCA filings. Full financial transparency, AGM compliance, and proper governance at every level.</p></div></div>
+        <div class="reason-row rev d2"><div class="r-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="r-body"><h4>Proven Civil Engineering Expertise</h4><p>NIC Code 45203 — specialised in roads, rail-beds, bridges, tunnels, pipelines, and runways. Deep technical expertise in MP terrain.</p></div></div>
+        <div class="reason-row rev d3"><div class="r-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="r-body"><h4>Value Engineering &amp; Cost Efficiency</h4><p>We optimize project design and material choices to deliver maximum quality within your budget without compromising structural integrity.</p></div></div>
+        <div class="reason-row rev d4"><div class="r-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="r-body"><h4>Experienced Director Team</h4><p>Four experienced directors — Hem Kumar Goyal, Rajni Goyal, Rahul Johari, and Neha Johari — bringing decades of construction sector leadership.</p></div></div>
+        <div class="reason-row rev d5"><div class="r-ico"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="r-body"><h4>Gwalior RoC Registered</h4><p>Properly registered under Registrar of Companies, Gwalior — a trusted, documented entity with full legal standing for government tenders.</p></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="section section-alt" id="testimonials">
+<div class="wrap">
+  <div class="testi-head">
+    <div class="stag rev"><div class="stag-bar"></div><span>Testimonials</span><div class="stag-bar"></div></div>
+    <h2 class="sec-h rev d1">What Our <em>Clients Say</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="t-card rev"><div class="t-stars">★★★★★</div><p class="t-text">"MBSN completed our 42 km road project on time in Sehore district. Their site engineers are highly professional and the bituminous quality was excellent throughout."</p><div class="t-author"><div class="t-avatar">PS</div><div><h5>Priya Sinha</h5><span>PWD Engineer · Sehore, MP</span></div></div></div>
+    <div class="t-card rev d1"><div class="t-stars">★★★★★</div><p class="t-text">"The bridge project over Narmada was technically challenging. MBSN's team handled it with precision — within budget and ahead of schedule. Highly recommended."</p><div class="t-author"><div class="t-avatar">AM</div><div><h5>Alok Mehta</h5><span>Project Director · Bhopal</span></div></div></div>
+    <div class="t-card rev d2"><div class="t-stars">★★★★★</div><p class="t-text">"Their PMGSY village road work in Vidisha was exceptional. All 18 villages connected, proper documentation maintained, and quality checks done at every stage."</p><div class="t-author"><div class="t-avatar">RK</div><div><h5>Ramesh Kumar</h5><span>Block Development Officer · Vidisha</span></div></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section class="section" id="process">
+<div class="wrap">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:1rem">
+    <div>
+      <div class="stag rev"><div class="stag-bar"></div><span>How We Work</span></div>
+      <h2 class="sec-h rev d1">Our <em>6-Step</em> Process</h2>
+    </div>
+    <p class="sec-desc rev d2" style="max-width:320px">A proven delivery framework for every project — from initial tender to final handover.</p>
+  </div>
+  <div class="proc-steps">
+    <div class="pstep rev"><div class="pstep-circ"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="pstep-title">Site Survey</div><p class="pstep-desc">Detailed topographic survey and soil testing to assess site conditions.</p></div>
+    <div class="pstep rev d1"><div class="pstep-circ"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="pstep-title">Design &amp; DPR</div><p class="pstep-desc">Detailed Project Report with structural drawings and BOQ preparation.</p></div>
+    <div class="pstep rev d2"><div class="pstep-circ"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><div class="pstep-title">Tender &amp; Award</div><p class="pstep-desc">Government tender filing and contract award from approving authority.</p></div>
+    <div class="pstep rev d3"><div class="pstep-circ"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><div class="pstep-title">Construction</div><p class="pstep-desc">Expert on-site execution with quality materials and daily monitoring.</p></div>
+    <div class="pstep rev d4"><div class="pstep-circ"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div><div class="pstep-title">Quality Check</div><p class="pstep-desc">Third-party QC testing and departmental inspection at every stage.</p></div>
+    <div class="pstep rev d5"><div class="pstep-circ"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div class="pstep-title">Completion &amp; DLP</div><p class="pstep-desc">Project completion certificate with defect liability period support.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ COMPANY DETAILS ═══ -->
+<section class="section section-alt" id="company">
+<div class="wrap">
+  <div class="stag rev" style="margin-bottom:.8rem"><div class="stag-bar"></div><span>Company Details</span></div>
+  <h2 class="sec-h rev d1" style="margin-bottom:2.5rem">Official <em>Registration Details</em></h2>
+  <div class="details-grid">
+    <div class="detail-card rev"><div class="detail-ico"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="detail-label">Company Name</span><span class="detail-val">Madhya Bharat Sadak Nirman Private Limited</span></div>
+    <div class="detail-card rev d1"><div class="detail-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="detail-label">CIN Number</span><span class="detail-val" style="font-family:monospace;font-size:.85rem">U45203MP2008PTC021296</span></div>
+    <div class="detail-card rev d2"><div class="detail-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="detail-label">Date of Incorporation</span><span class="detail-val">05 November 2008</span></div>
+    <div class="detail-card rev"><div class="detail-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><span class="detail-label">Company Type</span><span class="detail-val">Private Limited Company (Non-Govt, Ltd. by Shares)</span></div>
+    <div class="detail-card rev d1"><div class="detail-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><span class="detail-label">Registered Address</span><span class="detail-val">Shop No. 31/32, Ground First, Roshanpura, Bhopal, MP – 462003</span></div>
+    <div class="detail-card rev d2"><div class="detail-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><span class="detail-label">Registrar of Companies</span><span class="detail-val">RoC-Gwalior, Madhya Pradesh<div class="status-badge"><span class="status-dot"></span>Active</div></span></div>
+    <div class="detail-card rev"><div class="detail-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><span class="detail-label">Authorised Share Capital</span><span class="detail-val">₹5,00,000 (Five Lakh Rupees)</span></div>
+    <div class="detail-card rev d1"><div class="detail-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><span class="detail-label">Paid Up Capital</span><span class="detail-val">₹1,00,000 (One Lakh Rupees)</span></div>
+    <div class="detail-card rev d2"><div class="detail-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><span class="detail-label">Email Address</span><span class="detail-val">mbsn.pvtltd@gmail.com</span></div>
+    <div class="detail-card rev"><div class="detail-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><span class="detail-label">NIC Code</span><span class="detail-val">45203 — Construction &amp; Civil Engineering (Roads, Bridges, Tunnels, Runways)</span></div>
+    <div class="detail-card rev d1"><div class="detail-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="detail-label">Last AGM</span><span class="detail-val">23 December 2023</span></div>
+    <div class="detail-card rev d2"><div class="detail-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><span class="detail-label">Balance Sheet Filed</span><span class="detail-val">31 March 2023</span></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ DIRECTORS ═══ -->
+<section class="section" id="directors">
+<div class="wrap">
+  <div class="stag rev"><div class="stag-bar"></div><span>Board of Directors</span></div>
+  <h2 class="sec-h rev d1" style="margin-bottom:2.5rem">Meet the <em>Leadership</em></h2>
+  <div class="directors-grid">
+    <div class="dir-card rev">
+      <div class="dir-avatar">HKG</div>
+      <div class="dir-name">Hem Kumar Goyal</div>
+      <div class="dir-role">Director</div>
+    </div>
+    <div class="dir-card rev d1">
+      <div class="dir-avatar">RG</div>
+      <div class="dir-name">Rajni Goyal</div>
+      <div class="dir-role">Director</div>
+    </div>
+    <div class="dir-card rev d2">
+      <div class="dir-avatar">RJ</div>
+      <div class="dir-name">Rahul Johari</div>
+      <div class="dir-role">Director</div>
+    </div>
+    <div class="dir-card rev d3">
+      <div class="dir-avatar">NJ</div>
+      <div class="dir-name">Neha Johari</div>
+      <div class="dir-role">Director</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- AWARDS STRIP -->
+<section class="section-alt2">
+<div class="wrap">
+  <div class="awards-row">
+    <div class="award-pill rev"><div class="ap-ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><div class="ap-txt"><span>Status</span><strong>MCA Active Company</strong></div></div>
+    <div class="award-pill rev d1"><div class="ap-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="ap-txt"><span>Registered</span><strong>RoC-Gwalior, MP</strong></div></div>
+    <div class="award-pill rev d2"><div class="ap-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div class="ap-txt"><span>NIC Code</span><strong>45203 Civil Construction</strong></div></div>
+    <div class="award-pill rev d3"><div class="ap-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div><div class="ap-txt"><span>Compliant</span><strong>MCA AGM Dec 2023</strong></div></div>
+    <div class="award-pill rev d4"><div class="ap-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="ap-txt"><span>Category</span><strong>Non-Govt Private Ltd</strong></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="section section-alt" id="contact">
+<div class="wrap">
+  <div class="contact-grid">
+    <div>
+      <div class="stag rev"><div class="stag-bar"></div><span>Contact</span></div>
+      <h2 class="c-info-title rev d1">Start Your<br><em>Next Project</em><br>With Us</h2>
+      <p class="sec-desc rev d2">Reach out for a free consultation on your infrastructure or civil engineering project. We respond within 24 hours.</p>
+      <div class="c-details">
+        <div class="c-row rev d2"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><span class="c-lbl">Registered Address</span><span class="c-val">Shop No. 31/32, Ground First,<br>Roshanpura, Bhopal, MP – 462003</span></div></div>
+        <div class="c-row rev d3"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><span class="c-lbl">Email</span><span class="c-val">mbsn.pvtltd@gmail.com</span></div></div>
+        <div class="c-row rev d3"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><span class="c-lbl">CIN</span><span class="c-val" style="font-family:monospace;font-size:.82rem">U45203MP2008PTC021296</span></div></div>
+        <div class="c-row rev d4"><div class="c-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><span class="c-lbl">Working Hours</span><span class="c-val">Monday – Saturday: 9:00 AM – 7:00 PM</span></div></div>
+      </div>
+    </div>
+    <div class="rev d2">
+      <div class="form">
+        <div class="form-row">
+          <div class="f-field"><label>Full Name *</label><input type="text" placeholder="Your name"/></div>
+          <div class="f-field"><label>Phone Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+        </div>
+        <div class="f-field"><label>Email Address</label><input type="email" placeholder="your@email.com"/></div>
+        <div class="f-field">
+          <label>Project Type *</label>
+          <select>
+            <option value="" disabled selected>Select project type</option>
+            <option>Road Construction / Maintenance</option>
+            <option>Bridge / Culvert Construction</option>
+            <option>Tunnel Works</option>
+            <option>Pipeline / Ropeway</option>
+            <option>Port / Harbour / Runway</option>
+            <option>Government Tender / Contract</option>
+            <option>Other Civil Engineering</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="f-field"><label>Project Location</label><input type="text" placeholder="District / City in MP"/></div>
+          <div class="f-field">
+            <label>Estimated Budget</label>
+            <select>
+              <option value="" disabled selected>Select range</option>
+              <option>Below ₹50 Lakhs</option>
+              <option>₹50 Lakhs – ₹2 Crore</option>
+              <option>₹2 – ₹10 Crore</option>
+              <option>₹10 – ₹50 Crore</option>
+              <option>Above ₹50 Crore</option>
+              <option>Government Tender</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-field"><label>Project Details</label><textarea rows="4" placeholder="Describe your project — scope, timeline, site location, or any specific requirements..."></textarea></div>
+        <button class="f-submit" onclick="sendForm(this)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Send Enquiry
+        </button>
+        <p class="f-note">✓ Free consultation &nbsp;·&nbsp; ✓ No obligation &nbsp;·&nbsp; ✓ Reply within 24 hrs</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="#hero" class="logo-wrap" style="display:inline-flex">
+        <svg style="width:36px;height:36px;flex-shrink:0" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="7" fill="#B8892A" fill-opacity="0.12"/><rect width="40" height="40" rx="7" stroke="#B8892A" stroke-opacity="0.45" stroke-width="1"/><path d="M7 29V13L14 23L20 13L26 23L33 13V29" stroke="#D4A843" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><line x1="5" y1="33" x2="35" y2="33" stroke="#B8892A" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="logo-text" style="margin-left:10px"><span class="abbr">MBSN</span><span class="full">Madhya Bharat Sadak Nirman Pvt Ltd</span></div>
+      </a>
+      <p class="f-brand-desc">Construction and maintenance of roads, bridges, tunnels, and civil infrastructure in Madhya Pradesh. Incorporated 2008. RoC-Gwalior. CIN: U45203MP2008PTC021296.</p>
+      <div class="f-social">
+        <a class="fsoc" href="#"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a class="fsoc" href="#"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a class="fsoc" href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Road Construction</a></li>
+        <li><a href="#services">Bridge Works</a></li>
+        <li><a href="#services">Tunnel Construction</a></li>
+        <li><a href="#services">Pipeline Works</a></li>
+        <li><a href="#services">Port &amp; Runway</a></li>
+        <li><a href="#services">Govt. Contracts</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#directors">Directors</a></li>
+        <li><a href="#company">Company Details</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="#">Shop 31/32, Roshanpura</a></li>
+        <li><a href="#">Bhopal, MP – 462003</a></li>
+        <li><a href="mailto:mbsn.pvtltd@gmail.com">mbsn.pvtltd@gmail.com</a></li>
+      </ul>
+      <h5 style="margin-top:1.5rem">Legal</h5>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Madhya Bharat Sadak Nirman Private Limited. All Rights Reserved.</p>
+    <span class="cin-badge">CIN: U45203MP2008PTC021296</span>
+  </div>
+</footer>
+
+<button class="btt" id="btt" onclick="scrollTop()" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+// Theme toggle
+function toggleTheme() {
+  const html = document.documentElement;
+  html.dataset.theme = html.dataset.theme === 'light' ? 'dark' : 'light';
+  localStorage.setItem('mbsn-theme', html.dataset.theme);
+}
+// Load saved theme
+const saved = localStorage.getItem('mbsn-theme');
+if (saved) document.documentElement.dataset.theme = saved;
+
+// Nav scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+  document.getElementById('btt').classList.toggle('show', window.scrollY > 400);
+});
+
+// Reveal on scroll
+const revEls = document.querySelectorAll('.rev');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('up'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+revEls.forEach(el => obs.observe(el));
+
+// Counter animation
+function countUp(el, target) {
+  const start = performance.now(), dur = 1800;
+  (function step(now) {
+    const p = Math.min((now - start) / dur, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    const val = Math.floor(eased * target);
+    el.textContent = target >= 1000 ? val.toLocaleString() : val;
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = target >= 1000 ? target.toLocaleString() : target;
+  })(start);
+}
+const numObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      countUp(e.target, +e.target.dataset.count);
+      numObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.num-val[data-count]').forEach(el => numObs.observe(el));
+
+// Project filter
+function filterProj(btn, type) {
+  document.querySelectorAll('.pf').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.proj-item').forEach(p => {
+    p.style.opacity = (type === 'all' || p.dataset.type === type) ? '1' : '0.15';
+    p.style.transition = 'opacity .4s';
+  });
+}
+
+// Mobile menu
+function toggleMenu() { document.getElementById('mmenu').classList.toggle('open'); }
+function closeMenu() { document.getElementById('mmenu').classList.remove('open'); }
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (!id || id === '#') return;
+    const t = document.querySelector(id);
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+
+// Back to top
+function scrollTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+// Form submit
+function sendForm(btn) {
+  btn.innerHTML = '⏳ Sending...';
+  btn.style.opacity = '.75';
+  setTimeout(() => {
+    btn.innerHTML = '✓ Sent! We\'ll contact you within 24 hours.';
+    btn.style.background = '#16a34a';
+    btn.style.opacity = '1';
+  }, 1600);
+}
+</script>
+</body>
+</html>
